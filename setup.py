@@ -50,10 +50,11 @@ setup(
     test_suite='tests',
     extras_require={
         'tests': [
+            'equals==0.0.25',
             'mock==1.0.1',
             'pytest>=2.7,<3',
             'pytest-cov',
-            'coverage<4.4', # can remove after https://bitbucket.org/ned/coveragepy/issues/581/44b1-44-breaking-in-ci
+            'coverage<4.4',  # can remove after https://bitbucket.org/ned/coveragepy/issues/581/44b1-44-breaking-in-ci
             'pytest-timeout',
             'pytest-tornado',
             'pytest-benchmark[histogram]>=3.0.0rc1',
@@ -62,7 +63,7 @@ setup(
             'flake8-quotes',
             'coveralls',
             'tchannel>=0.27;python_version<"3"',
-            'opentracing_instrumentation>=2,<3',
+            'opentracing_instrumentation>=2.4.0,<3',
         ]
     },
 )
